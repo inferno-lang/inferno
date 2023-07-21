@@ -159,3 +159,21 @@ public final class Impl<T, R extends CharSequence & Serializable> implements ILo
   #create id stream
     Ignore::new::noop
 ```
+
+### Пакет и импорты:
+
+Пример с декларацией пакета, и с импортами, два вида импортов, аналогично как в java,kotlin,groovy,scala точный импорт и обобщенный.
+
+Так же приведен пример с использованием синтаксиса "алиаса" `>`, теперь компилятор, будет рассматривать Ipv4 класс как Inte4Adress.
+
+```Ruby
+@package org.inferno.lang
+@use
+  java.text.ChoiceFormat
+  java.security.*
+  java.net.Inet4Address > Ipv4
+
+.SomeCls
+  #new
+    ::println '<init> called!'
+```
