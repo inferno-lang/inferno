@@ -164,7 +164,7 @@ public final class Impl<T, R extends CharSequence & Serializable> implements ILo
 
 ### Пакет и импорты:
 
-Пример с декларацией пакета, и с импортами, два вида импортов, аналогично как в java,kotlin,groovy,scala точный импорт и обобщенный.
+Пример с декларацией пакета, и с импортами, два вида импортов, аналогично как в java,kotlin,groovy,scala точный импорт и обобщенный (с отличием, что обобщенный без .*, так как она не нужна).
 
 Так же приведен пример с использованием синтаксиса "алиаса" `>`, теперь компилятор, будет рассматривать Ipv4 класс как Inte4Adress.
 
@@ -172,7 +172,7 @@ public final class Impl<T, R extends CharSequence & Serializable> implements ILo
 @package org.inferno.lang
 @use
   java.text.ChoiceFormat
-  java.security.*
+  java.security
   java.net.Inet4Address > Ipv4
 
 .SomeCls
